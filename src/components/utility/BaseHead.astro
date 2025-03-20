@@ -1,0 +1,61 @@
+---
+// imports
+import { ClientRouter } from "astro:transitions";
+
+// css
+import "@/styles/style.css";
+import "@radix-ui/themes/styles.css";
+
+// props
+import type { PageProps } from "@/lib";
+
+interface Props {
+  props: PageProps;
+}
+
+const { props } = Astro.props;
+
+// data
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const title = `${props.pageInfo.title} ${props.appInfo.title === undefined ? "" : `// ${props.appInfo.title}`}`;
+---
+
+<!-- trans ition -->
+<ClientRouter />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" as="font" />
+<link rel="preconnect" href="https://fonts.gstatic.com" as="font" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..800&family=Rubik:wght@300..900&display=swap"
+  rel="stylesheet"
+/>
+
+<!-- Global Metadata -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="sitemap" href="/sitemap-index.xml" />
+<meta name="generator" content={Astro.generator} />
+
+<!-- Canonical URL -->
+<link rel="canonical" href={canonicalURL} />
+
+<!-- Primary Meta Tags -->
+<title>{title}</title>
+<meta name="title" content={title} />
+<meta name="description" content={props.pageInfo.description} />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content={Astro.url} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={props.pageInfo.description} />
+<!-- <meta property="og:image" content={new URL(image, Astro.url)} /> -->
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content={Astro.url} />
+<meta property="twitter:title" content={title} />
+<meta property="twitter:description" content={props.pageInfo.description} />
+<!-- <meta property="twitter:image" content={new URL(image, Astro.url)} /> -->
