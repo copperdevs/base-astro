@@ -19,11 +19,20 @@ export default function Counter() {
         <Separator size="4" />
       </Box>
       <Grid gap="3" columns="2" width="25%" className="center">
-        <Button size="2" color="green" onClick={() => setCounter(counter + 1)}>
+        <Button
+          size="2"
+          color="green"
+          onClick={() => setCounter(counter + 1)}
+          variant="soft"
+        >
           <Plus /> Add
         </Button>
 
-        <Button color="red" onClick={() => setCounter(counter - 1)}>
+        <Button
+          color="red"
+          onClick={() => setCounter(counter - 1)}
+          variant="soft"
+        >
           <Minus /> Remove
         </Button>
       </Grid>

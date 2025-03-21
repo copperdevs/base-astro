@@ -17,7 +17,7 @@ Simple base template for the way I layout many of my websites.
 
 - Astro
   - Cloudflare Adapter
-- Reacet
+- React
 - Radix UI Themes
 - Lucide Icons React
 
