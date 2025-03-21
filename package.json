@@ -6,7 +6,8 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "format": "astro check && prettier --write ."
   },
   "dependencies": {
     "@astrojs/cloudflare": "^12.2.4",
@@ -17,6 +18,7 @@
     "@types/react-dom": "^19.0.4",
     "astro": "^5.5.3",
     "lucide-react": "^0.483.0",
+    "prettier": "^3.5.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   }
