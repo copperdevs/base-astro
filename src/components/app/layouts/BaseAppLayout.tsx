@@ -1,9 +1,4 @@
-import {
-  AppearanceColors,
-  AccentColors,
-  GrayColors,
-  type PageProps,
-} from "@/lib";
+import { type PageProps } from "@/lib";
 import { Theme as RadixTheme } from "@radix-ui/themes";
 import type { ReactNode } from "react";
 
@@ -16,10 +11,10 @@ export function BaseAppLayout({
 }) {
   return (
     <RadixTheme
-      accentColor={AccentColors.Jade}
-      grayColor={GrayColors.Slate}
+      accentColor={props.appInfo.accentColor}
+      grayColor={props.appInfo.grayColor}
       radius="large"
-      appearance={AppearanceColors.Dark}
+      appearance={props.appInfo.appearanceColor}
     >
       {children}
     </RadixTheme>

@@ -1,13 +1,13 @@
 # Astro + React Example
 
-```sh
-npm create astro@latest -- --template framework-react
-```
+## Getting Started
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/framework-react)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/framework-react)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/framework-react/devcontainer.json)
+1. clone or whatever
+2. `npm install` or `bun install` or your preferered thing
+3. edit [`/src/appInfo.ts`](/src/appInfo.ts) to update it to your prefered info
+4. `npm run dev` or `bun run dev`
 
-This example showcases Astro working with [React](https://react.dev).
+## Resources
 
-Write your React components as `.jsx` or `.tsx` files in your project.
+- [check-site-meta](https://github.com/alfonsusac/check-site-meta)
+  - Used to get data for [BaseHead](https://github.com/copperdevs/base-astro/blob/main/src/components/utility/BaseHead.astro)

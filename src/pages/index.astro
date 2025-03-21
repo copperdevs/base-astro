@@ -1,31 +1,15 @@
 ---
-import { BaseAppLayout } from "@app/layout/BaseAppLayout";
+import { IndexPage } from "@app/pages/IndexPage";
 import BaseLayout from "@/layouts/BaseLayout.astro";
-import {
-  AccentColors,
-  AppearanceColors,
-  GrayColors,
-  type AppInfo,
-  type PageInfo,
-  type PageProps,
-} from "@/lib";
+import { createProps, type PageProps } from "@/lib";
 
-const props = {
-  pageInfo: {
-    title: "home",
-    description: "home page for the base astro example",
-  } as PageInfo,
-  appInfo: {
-    title: "base-astro",
-    accentColor: AccentColors.Jade,
-    grayColor: GrayColors.Slate,
-    appearanceColor: AppearanceColors.Dark,
-  } as AppInfo,
-} as PageProps;
+const props: PageProps = createProps({
+  title: "home",
+  description: "home page for the base astro example",
+  image: "banner.png",
+});
 ---
 
 <BaseLayout props={props}>
-  <BaseAppLayout props={props}>
-    <> </>
-  </BaseAppLayout>
+  <IndexPage props={props} client:load />
 </BaseLayout>

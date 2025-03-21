@@ -1,3 +1,10 @@
+import { appInfo, siteInfo } from "@/appInfo";
+import { type PageInfo, type PageProps } from "@/lib";
+
+export function createProps(pageInfo: PageInfo): PageProps {
+  return { pageInfo: pageInfo, appInfo: appInfo, siteInfo: siteInfo };
+}
+
 export function goTo(path: string) {
   window.location.href = path;
 }
