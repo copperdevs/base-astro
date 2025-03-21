@@ -1,4 +1,6 @@
-# Astro + React Example
+# Base Astro Template
+
+> [https://base-astro.copperdevs.com/](https://base-astro.copperdevs.com/)
 
 ## Use Case
 
