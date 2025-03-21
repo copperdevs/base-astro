@@ -15,9 +15,10 @@ export default function Counter() {
           {counter}
         </Text>
       </Heading>
-      <Grid gap="3" width="25%" className="center">
+      <Box width="25%" className="center spacer bottom">
         <Separator size="4" />
-
+      </Box>
+      <Grid gap="3" columns="2" width="25%" className="center">
         <Button size="2" color="green" onClick={() => setCounter(counter + 1)}>
           <Plus /> Add
         </Button>

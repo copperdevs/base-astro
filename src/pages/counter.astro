@@ -1,16 +1,16 @@
 ---
-import IndexPage from "@app/pages/IndexPage";
+import CounterPage from "@app/pages/CounterPage";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { createProps, type PageProps } from "@/lib";
 
 const props: PageProps = createProps({
-  title: "home",
+  title: "counter",
   description:
-    "home page for the base astro example by copperdevs which is a simple template project :3",
+    "counter page for the base astro example by copperdevs which is a base example for astro :3",
   image: "banner.png",
 });
 ---
 
 <BaseLayout props={props}>
-  <IndexPage props={props} client:load />
+  <CounterPage props={props} client:load />
 </BaseLayout>

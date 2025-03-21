@@ -121,6 +121,10 @@ ul.nolist .card .badge {
   margin-bottom: 8px;
 }
 
+.spacer.bottom {
+  margin-bottom: 8px;
+}
+
 .spacer.horizontal.thin {
   margin-left: 4px;
   margin-right: 4px;
