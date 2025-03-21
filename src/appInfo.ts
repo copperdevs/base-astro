@@ -20,5 +20,4 @@ export const siteInfo: SiteInfo = {
     name: "copper",
     twitterUsername: "@copperdevs",
   },
-  siteUrl: "https://copperdevs.com",
 };

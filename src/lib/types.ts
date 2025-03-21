@@ -27,7 +27,6 @@ export type SiteInfo = {
   robots: Robots;
   twitter?: Twitter;
   author: Author;
-  siteUrl: string;
 };
 
 export type Robots =
