@@ -1,5 +1,5 @@
 import { Box, Button, Grid, Heading, Separator, Text } from "@radix-ui/themes";
-import { Eye, Minus, Plus } from "lucide-react";
+import { Minus, Plus } from "lucide-react";
 import { useState } from "react";
 
 export default function Counter() {
