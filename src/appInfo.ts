@@ -10,7 +10,7 @@ export const siteInfo: SiteInfo = {
   title: "base-astro",
   license: "MIT",
   keywords: ["testing", "astro"],
-  robots: "none",
+  robots: "all",
   locale: "en_US",
   twitter: {
     card: "summary_large_image",
