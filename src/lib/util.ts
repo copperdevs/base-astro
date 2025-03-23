@@ -9,6 +9,13 @@ export function goTo(path: string) {
   window.location.href = path;
 }
 
+export function goToNewPage(path: string, focus: boolean = false) {
+  const opened = window.open(path, "_blank");
+  if (focus && opened) {
+    opened.focus();
+  }
+}
+
 export function getRandomNumber(min: number, max: number): number {
   return Math.random() * (max - min) + min;
 }
