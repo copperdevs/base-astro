@@ -14,15 +14,7 @@ Simple base template for the way I layout many of my websites.
 4. update `siteUrl` in [`/astro.config.mjs`](/astro.config.mjs) to your sites url
 5. `npm run dev` or `bun run dev`
 6. ??? idk make the site
-
-## Packages
-
-- Astro
-  - Cloudflare Adapter
-- React
-- Radix UI Themes
-- Lucide Icons React
-
+   
 ## Resources
 
 - [check-site-meta](https://github.com/alfonsusac/check-site-meta)
