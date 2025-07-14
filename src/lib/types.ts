@@ -1,62 +1,33 @@
-import type { AccentColors, AppearanceColors, GrayColors } from "@/lib";
+import type { AccentColors } from "@/lib";
 
-export type PageProps = {
-	pageInfo: PageInfo;
-	appInfo: AppInfo;
-	siteInfo: SiteInfo;
+export type Data<T> = {
+	data: T;
+	hasError: boolean;
+	error: string;
 };
 
-export type PageInfo = {
-	title: string;
-	description: string;
-	image: string;
-	article?: Article;
+export type UUID = `${string}-${string}-${string}-${string}-${string}`;
+
+export type ColoredText = {
+	text: string;
+	color: AccentColors;
 };
 
-export type AppInfo = {
-	accentColor: AccentColors;
-	grayColor: GrayColors;
-	appearanceColor: AppearanceColors;
+export type Dictionary<TKey extends string | number | symbol, TValue> = {
+	[Key in TKey]: TValue;
 };
 
-export type SiteInfo = {
-	title: string;
-	license: string;
-	locale: string;
-	keywords: string[];
-	robots: Robots;
-	twitter?: Twitter;
-	author: Author;
+export type KeyPair<TKey, TValue> = {
+	key: TKey;
+	value: TValue;
 };
 
-export type Robots =
-	| "all"
-	| "noindex"
-	| "nofollow"
-	| "none"
-	| "nosnippet"
-	| "indexifembedded"
-	| "notranslate"
-	| "noimageindex";
-
-export type Twitter = {
-	card?: TwitterCard;
-	imageAlt?: string;
-	siteUsername?: string;
-};
-
-export type TwitterCard = "summary" | "summary_large_image";
-
-export type Author = {
-	name: string;
-	twitterUsername?: string;
-};
-
-export type Article = {
-	author: string;
-	publishedTime: string;
-	modifiedTime?: string;
-	expirationTime?: string;
-	section: string;
-	tag: string;
-};
+export type KeyPairFromDictionary<
+	// biome-ignore lint/suspicious/noExplicitAny: you can put anything in the dictionary 🤷
+	D extends Record<string | number | symbol, any>,
+> = {
+	[K in keyof D]: {
+		key: K;
+		value: D[K];
+	};
+}[keyof D];

@@ -1,5 +1,5 @@
 import { appInfo, siteInfo } from "@/appInfo";
-import type { PageInfo, PageProps } from "@/lib";
+import type { Data, PageInfo, PageProps } from "@/lib";
 
 export function createProps(pageInfo: PageInfo): PageProps {
 	return { pageInfo, appInfo, siteInfo };
@@ -49,4 +49,32 @@ export function removeFileExtension(filename: string): string {
 		return filename;
 	}
 	return filename.substring(0, lastDotIndex);
+}
+
+export function copyToClipboard(contents: string) {
+	navigator.clipboard.writeText(contents);
+}
+
+export function setURL(url: string) {
+	history.pushState(null, "", url);
+}
+
+export function removeDuplicates<T>(arr: T[]): T[] {
+	return [...new Set(arr)];
+}
+
+export function createData<T>(data: T): Data<T> {
+	return { data, hasError: false, error: "" };
+}
+
+export function createDataWithError<T>(data: T, error: string): Data<T> {
+	return { data, hasError: true, error };
+}
+
+export function getFileExtension(filename: string): string {
+	const parts = filename.split(".");
+	if (parts.length > 1) {
+		return parts.pop() || "";
+	}
+	return "";
 }

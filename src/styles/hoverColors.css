@@ -1,0 +1,129 @@
+.colorSelectorItem.gray[data-highlighted] {
+	background-color: var(--gray-9);
+	color: white;
+}
+
+.colorSelectorItem.gold[data-highlighted] {
+	background-color: var(--gold-9);
+	color: white;
+}
+
+.colorSelectorItem.bronze[data-highlighted] {
+	background-color: var(--bronze-9);
+	color: white;
+}
+
+.colorSelectorItem.brown[data-highlighted] {
+	background-color: var(--brown-9);
+	color: white;
+}
+
+.colorSelectorItem.yellow[data-highlighted] {
+	background-color: var(--yellow-9);
+	color: black;
+}
+
+.colorSelectorItem.amber[data-highlighted] {
+	background-color: var(--amber-9);
+	color: black;
+}
+
+.colorSelectorItem.orange[data-highlighted] {
+	background-color: var(--orange-9);
+	color: white;
+}
+
+.colorSelectorItem.tomato[data-highlighted] {
+	background-color: var(--tomato-9);
+	color: white;
+}
+
+.colorSelectorItem.red[data-highlighted] {
+	background-color: var(--red-9);
+	color: white;
+}
+
+.colorSelectorItem.ruby[data-highlighted] {
+	background-color: var(--ruby-9);
+	color: white;
+}
+
+.colorSelectorItem.crimson[data-highlighted] {
+	background-color: var(--crimson-9);
+	color: white;
+}
+
+.colorSelectorItem.pink[data-highlighted] {
+	background-color: var(--pink-9);
+	color: white;
+}
+
+.colorSelectorItem.plum[data-highlighted] {
+	background-color: var(--plum-9);
+	color: white;
+}
+
+.colorSelectorItem.purple[data-highlighted] {
+	background-color: var(--purple-9);
+	color: white;
+}
+
+.colorSelectorItem.violet[data-highlighted] {
+	background-color: var(--violet-9);
+	color: white;
+}
+
+.colorSelectorItem.iris[data-highlighted] {
+	background-color: var(--iris-9);
+	color: white;
+}
+
+.colorSelectorItem.indigo[data-highlighted] {
+	background-color: var(--indigo-9);
+	color: white;
+}
+
+.colorSelectorItem.blue[data-highlighted] {
+	background-color: var(--blue-9);
+	color: white;
+}
+
+.colorSelectorItem.cyan[data-highlighted] {
+	background-color: var(--cyan-9);
+	color: black;
+}
+
+.colorSelectorItem.teal[data-highlighted] {
+	background-color: var(--teal-9);
+	color: white;
+}
+
+.colorSelectorItem.jade[data-highlighted] {
+	background-color: var(--jade-9);
+	color: white;
+}
+
+.colorSelectorItem.green[data-highlighted] {
+	background-color: var(--green-9);
+	color: white;
+}
+
+.colorSelectorItem.grass[data-highlighted] {
+	background-color: var(--grass-9);
+	color: white;
+}
+
+.colorSelectorItem.lime[data-highlighted] {
+	background-color: var(--lime-9);
+	color: black;
+}
+
+.colorSelectorItem.mint[data-highlighted] {
+	background-color: var(--mint-9);
+	color: black;
+}
+
+.colorSelectorItem.sky[data-highlighted] {
+	background-color: var(--sky-9);
+	color: black;
+}

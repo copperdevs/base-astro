@@ -24,27 +24,27 @@ export default function Counter() {
 					{counter}
 				</Text>
 			</Heading>
-			<Box className="center spacer bottom" width="25%">
-				<Separator size="4" />
-			</Box>
-			<Grid className="center" columns="2" gap="3" width="25%">
-				<Button
-					color="green"
-					onClick={() => setCounter(counter + 1)}
-					size="2"
-					variant="soft"
-				>
-					<Plus /> Add
-				</Button>
+			<Box className="center" width="35%">
+				<Separator className=" spacer bottom" size="4" />
+				<Grid className="center" columns="2" gap="3">
+					<Button
+						color="green"
+						onClick={() => setCounter(counter + 1)}
+						size="2"
+						variant="soft"
+					>
+						<Plus size={18} /> Add
+					</Button>
 
-				<Button
-					color="red"
-					onClick={() => setCounter(counter - 1)}
-					variant="soft"
-				>
-					<Minus /> Remove
-				</Button>
-			</Grid>
+					<Button
+						color="red"
+						onClick={() => setCounter(counter - 1)}
+						variant="soft"
+					>
+						<Minus size={18} /> Remove
+					</Button>
+				</Grid>
+			</Box>
 		</Box>
 	);
 }

@@ -55,12 +55,24 @@ body {
 }
 
 .content {
-	padding-top: 96px;
+	padding-top: 64px;
 	height: 100%;
 	width: 100%;
 }
 
-@media (min-width: 831px) {
+@media (min-width: 1201px) {
+	.pagecenter .contentcenter {
+		display: flex;
+		align-items: start;
+		flex-direction: column;
+		justify-content: center;
+		height: 100%;
+		min-width: 55%;
+		max-width: 65%;
+	}
+}
+
+@media (min-width: 831px) and (max-width: 1200px) {
 	.pagecenter .contentcenter {
 		display: flex;
 		align-items: start;
@@ -79,8 +91,8 @@ body {
 		flex-direction: column;
 		justify-content: center;
 		height: 100%;
-		min-width: 85%;
-		max-width: 95%;
+		min-width: 80%;
+		max-width: 90%;
 	}
 }
 
@@ -125,6 +137,14 @@ ul.nolist .card .badge {
 	margin-bottom: 8px;
 }
 
+.spacer.top {
+	margin-top: 8px;
+}
+
+.spacer.top.large {
+	margin-top: 16px;
+}
+
 .spacer.horizontal.thin {
 	margin-left: 4px;
 	margin-right: 4px;
@@ -141,4 +161,10 @@ ul.nolist .card .badge {
 
 .full.height {
 	height: 100%;
+}
+
+.rightbuttons {
+	position: absolute;
+	float: right;
+	right: 16px;
 }
