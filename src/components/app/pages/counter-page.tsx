@@ -1,4 +1,4 @@
-import Counter from "@/components/app/components/testing/counter";
+import { Counter } from "@app/components";
 import { BaseAppLayout } from "@/components/app/layouts/base-app-layout";
 import type { PageProps } from "@/lib";
 

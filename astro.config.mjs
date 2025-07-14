@@ -20,23 +20,23 @@ export default defineConfig({
 	}),
 	image: { service: passthroughImageService() },
 	integrations: [react(), sitemap()],
-	vite: {
-		server: {
-			watch: {
-				usePolling: true,
-			},
-		},
-		resolve: {
-			alias: import.meta.env.PROD
-				? {
-						"react-dom/server": "react-dom/server.edge",
-					}
-				: undefined,
-		},
-		ssr: {
-			external: ["node:buffer"],
-		},
-	},
+	// vite: {
+	// 	server: {
+	// 		watch: {
+	// 			usePolling: true,
+	// 		},
+	// 	},
+	// 	resolve: {
+	// 		alias: import.meta.env.PROD
+	// 			? {
+	// 					"react-dom/server": "react-dom/server.edge",
+	// 				}
+	// 			: undefined,
+	// 	},
+	// 	ssr: {
+	// 		external: ["node:buffer"],
+	// 	},
+	// },
 	experimental: {
 		contentIntellisense: true,
 		headingIdCompat: true,
