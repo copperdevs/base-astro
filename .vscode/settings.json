@@ -6,7 +6,8 @@
     ".github": true,
     ".zed": true,
     ".rules": true,
-    "bun.lock": true
+    "bun.lock": true,
+    "dist": true
   },
   "workbench.editor.labelFormat": "short",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
