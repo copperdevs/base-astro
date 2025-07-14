@@ -1,9 +1,24 @@
 {
   "files.exclude": {
     ".astro/": true,
+    ".wrangler/": true,
     "node_modules/": true,
-    "bun.lockb": true,
-    ".wrangler/": true
+    ".github": true,
+    ".zed": true,
+    ".rules": true,
+    "bun.lock": true
   },
-  "workbench.editor.labelFormat": "short"
+  "workbench.editor.labelFormat": "short",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript][typescript][javascriptreact][typescriptreact][json][jsonc][css][graphql]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "emmet.showExpandedAbbreviation": "never",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.biome": "explicit",
+    "source.organizeImports.biome": "explicit"
+  }
 }

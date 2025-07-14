@@ -7,7 +7,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "format": "astro check && prettier --write ."
+    "format": "astro check && ultracite format",
+    "format:unsafe": "astro check && ultracite format --unsafe"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
@@ -19,9 +20,12 @@
     "@types/react-dom": "^19.0.4",
     "astro": "^5.5.3",
     "lucide-react": "^0.483.0",
-    "prettier": "^3.5.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "typescript": "^5.8.2"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.1.1",
+    "ultracite": "5.0.35"
   }
 }

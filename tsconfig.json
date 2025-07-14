@@ -11,6 +11,7 @@
       "@app/*": ["./src/components/app/*"]
     },
     "verbatimModuleSyntax": true,
-    "moduleResolution": "Bundler"
+    "moduleResolution": "Bundler",
+    "strictNullChecks": true
   }
 }
