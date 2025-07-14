@@ -1,4 +1,4 @@
-import { appInfo, siteInfo } from "@/appInfo";
+import { appInfo, siteInfo } from "@/app-info";
 import type { Data, PageInfo, PageProps } from "@/lib";
 
 export function createProps(pageInfo: PageInfo): PageProps {
